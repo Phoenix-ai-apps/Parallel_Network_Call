@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <data>
+
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:elevation="50dp"
+            app:cardCornerRadius="15dp"
+            app:cardPreventCornerOverlap="false"
+            card_view:cardElevation="4dp"
+            card_view:cardPreventCornerOverlap="false"
+            card_view:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/grey_200">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="@string/no_internet"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey_700"
+                    android:textSize="20dp" />
+
+                <View
+                    android:id="@+id/vw1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tv_header"
+                    android:background="@color/grey_300" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vw1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="15dp"
+                    android:text="@string/no_internet_msg"
+                    android:textColor="@color/grey_900"
+                    android:textSize="18dp" />
+
+                <View
+                    android:id="@+id/vw2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tv_message"
+                    android:background="@color/grey_300" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_dismiss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vw2"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/dismiss"
+                    android:textColor="@color/grey_800"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+            .
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</layout>
